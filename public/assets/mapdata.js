@@ -1,12 +1,12 @@
-var simplemaps_usmap_mapdata={
+var simplemaps_usmap_mapdata = {
   main_settings: {
-   //General settings
+    //General settings
     width: "responsive", //'700' or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     border_color: "#ffffff",
     popups: "detect",
-    
+
     //State defaults
     state_description: "State Description",
     state_color: "#88A4BC",
@@ -14,8 +14,8 @@ var simplemaps_usmap_mapdata={
     state_url: "",
     border_size: "0.5",
     all_states_inactive: "no",
-    all_states_zoomable: "yes",
-    
+    all_states_zoomable: "no",
+
     //Location defaults
     location_description: "Add location markers using latitude and longitude!",
     location_color: "#2041D4",
@@ -30,7 +30,7 @@ var simplemaps_usmap_mapdata={
     location_hover_border: 2.5,
     all_locations_inactive: "no",
     all_locations_hidden: "no",
-    
+
     //Label defaults
     label_color: "#d5ddec",
     label_hover_color: "#d5ddec",
@@ -48,7 +48,7 @@ var simplemaps_usmap_mapdata={
     zoom_out_incrementally: "yes",
     zoom_percentage: 0.99,
     zoom_time: 0.5,
-    
+
     //Popup settings
     popup_color: "white",
     popup_opacity: 0.9,
@@ -56,7 +56,7 @@ var simplemaps_usmap_mapdata={
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
-    
+
     //Advanced settings
     div: "map",
     auto_load: "yes",
@@ -167,7 +167,8 @@ var simplemaps_usmap_mapdata={
       name: "Iowa"
     },
     MN: {
-      name: "Minnesota"
+      name: "Minnesota",
+      onClick: "{this.clickMessage}"
     },
     OK: {
       name: "Oklahoma"

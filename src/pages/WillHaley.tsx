@@ -2,7 +2,6 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import WHComponent from '../components/WHComponent';
-import './LusoSystems.css';
 
 const WillHaley: React.FC = () => {
   return (
