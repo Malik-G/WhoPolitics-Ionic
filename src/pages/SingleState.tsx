@@ -1,14 +1,8 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-import './Home.css';
-import { useHistory } from 'react-router';
+import SingleStateComponent from '../components/SingleStateComponent';
 
-const Home: React.FC = () => {
-  let history = useHistory()
-  const onClick = () => {
-    history.push('/willhaley')
-  }
-  
+const SingleState: React.FC = (props) => {
   return (
     <IonPage>
       <IonHeader>
@@ -22,10 +16,10 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={onClick}>U.S. Map</IonButton>
+        <SingleStateComponent />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default SingleState;

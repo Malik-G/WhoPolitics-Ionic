@@ -1,5 +1,4 @@
 import React, { Component, useState, useEffect, Suspense, lazy } from 'react';
-import './ExploreContainer.css';
 import './SM-assets/mapdata.js';
 import './SM-assets/usmap.js';
 

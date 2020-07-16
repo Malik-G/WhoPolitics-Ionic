@@ -5,6 +5,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import SimpleMaps from './pages/SimpleMaps';
 import WillHaley from './pages/WillHaley';
+import SingleState from './pages/SingleState'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -32,6 +33,7 @@ const App: React.FC = () => (
         <Route path="/home" component={Home} exact={true} />
         <Route path="/simplemaps" component={SimpleMaps} exact={true} />
         <Route path="/willhaley" component={WillHaley} exact={true} />
+        <Route path="/willhaley/:id" component={SingleState} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
